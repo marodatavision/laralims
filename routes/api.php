@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::domain('lims.'.config('app.domain'))->middleware('auth:sanctum')->group(function() {
+    // api routes react
+});
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
