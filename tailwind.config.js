@@ -7,6 +7,10 @@ module.exports = {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './resources/js/**/*.js',
+        './resources/js/**/*.jsx',
+        './resources/js/**/*.ts',
+        './resources/js/**/*.tsx',
     ],
 
     theme: {
@@ -14,6 +18,7 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
+            transform: ['hover', 'focus'],
         },
     },
 
