@@ -22,7 +22,7 @@ const AppRouter = (props) => {
     return(
     <Router basename="/lims">
         <div className="w-full">
-            <nav className="py-3">
+            <nav>
                 <ul className="flex space-x-4 shadow-md bg-gray-800 py-3">
                     <li>
                         <img src="/images/lims_small_logo.png" height="100" width="100"/>
