@@ -12,14 +12,15 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .react()
     .sass('resources/sass/app.scss', 'public/css')
+    .copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')
     .options({
         postCss: [
             require('postcss-import'),
             require('tailwindcss'),
         ]
     })
+    .react();
 
 if (mix.inProduction()) {
     mix.version();

@@ -18,23 +18,26 @@
 
 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2">
     
-    <a class="p-6 transition ease-in-out duration-300 hover:bg-blue-200" href="{{ route('lims') . '/lifecycle' }}">
+    <a class="p-6 transition ease-in-out duration-300 hover:bg-blue-200 hover:text-blue-700 flex justify-center" href="{{ route('lims') . '/lifecycle' }}">
         <div class="text-3xl">{{ __('Lifecycle') }}</div>
+        <x-fas-vial class="w-20 h-20" />
     </a>
 
-    <a class="p-6 border-t border-gray-200 md:border-t-0 md:border-l transition ease-in-out duration-300 hover:bg-yellow-200" 
+    <a class="p-6 border-t border-gray-200 md:border-t-0 md:border-l transition ease-in-out duration-300 hover:bg-yellow-200 hover:text-yellow-700 flex justify-center" 
     href="{{ route('lims') . '/instruments' }}">
         <div class="text-3xl">{{ __('Instruments') }}</div>
-        <div>Icons erstellt von <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
+        <x-fas-microscope class="w-20 h-20" />
     </a>
 
-    <a class="p-6 border-t border-gray-200 transition ease-in-out duration-300 hover:bg-green-200" 
+    <a class="p-6 border-t border-gray-200 transition ease-in-out duration-300 hover:bg-green-200 hover:text-green-700 flex justify-center" 
     href="{{ route('lims') . '/employees' }}">
         <div class="text-3xl">{{ __('Employees') }}</div>
+        <x-fas-user-tie class="w-20 h-20" />
     </a>
 
-    <a class="p-6 border-t border-gray-200 md:border-l transition ease-in-out duration-300 hover:bg-red-200" 
+    <a class="p-6 border-t border-gray-200 md:border-l transition ease-in-out duration-300 hover:bg-red-200 hover:text-red-700 flex justify-center" 
     href="{{ route('lims') . '/audittrail' }}">
         <div class="text-3xl">{{ __('Audittrail') }}</div>
+        <x-fas-user-clock class="w-20 h-20" />
     </a>
 </div>
