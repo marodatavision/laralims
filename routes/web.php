@@ -26,7 +26,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     // react routes
     Route::get('lims/{any?}', function () {
         return view('react');
-    })->where('any', '^(?!api).*$');
+    })->where('any', '^(?!api).*$')->name('lims');
 });
 
 
