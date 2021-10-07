@@ -51,14 +51,14 @@
                                 <a class="px-5 py-3 transition ease-in-out duration-300 bg-gray-300 hover:bg-blue-600 hover:text-blue-100 text-3xl border shadow-md rounded self-center" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a>
                             </div>
                             @else
-                            <div class="mt-3 flex justify-center mb-3">
-                                <div class="flex justify-between space-x-5">
-                                    <a class="px-5 py-3 transition ease-in-out duration-300 bg-gray-300 hover:bg-blue-600 hover:text-blue-100 text-3xl border shadow-md rounded self-center" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <div class="mt-3 flex justify-center mb-3 space-x-3">
+                                <div class="flex justify-between w-64 space-x-5">
+                                    <a class="w-full text-center px-5 py-3 transition ease-in-out duration-300 bg-gray-300 hover:bg-blue-600 hover:text-blue-100 text-3xl border shadow-md rounded self-center" href="{{ route('login') }}">{{ __('Login') }}</a>
                                     <x-fas-arrow-left class="w-20 h-20"/>
                                 </div>
-                                <div class="flex justify-between space-x-5">
+                                <div class="flex justify-between w-64 space-x-5">
                                     <x-fas-arrow-right class="w-20 h-20"/>
-                                    <a class="px-5 py-3 transition ease-in-out duration-300 bg-gray-300 hover:bg-blue-600 hover:text-blue-100 text-3xl border shadow-md rounded self-center" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="w-full text-center px-5 py-3 transition ease-in-out duration-300 bg-gray-300 hover:bg-blue-600 hover:text-blue-100 text-3xl border shadow-md rounded self-center" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </div>
                             </div>
                             @endif
