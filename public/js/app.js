@@ -5451,10 +5451,13 @@ var AppRouter = function AppRouter(props) {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("ul", {
           className: "flex space-x-4 shadow-md bg-gray-800 py-3",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-              src: "/images/lims_small_logo.png",
-              height: "100",
-              width: "100"
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
+              href: "/dashboard",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+                src: "/images/lims_small_logo.png",
+                height: "100",
+                width: "100"
+              })
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
             className: actualPage === 'home' ? _layout_navbutton_layout__WEBPACK_IMPORTED_MODULE_1__.NAVBUTTON_ACTIVE : _layout_navbutton_layout__WEBPACK_IMPORTED_MODULE_1__.NAVBUTTON_DEACTIVE,

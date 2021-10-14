@@ -25,7 +25,7 @@ const AppRouter = (props) => {
             <nav>
                 <ul className="flex space-x-4 shadow-md bg-gray-800 py-3">
                     <li>
-                        <img src="/images/lims_small_logo.png" height="100" width="100"/>
+                        <a href="/dashboard"><img src="/images/lims_small_logo.png" height="100" width="100"/></a>
                     </li>
                     <li className={actualPage === 'home' ? NAVBUTTON_ACTIVE : NAVBUTTON_DEACTIVE}>
                         <Link to="/" onClick={e => handleNavClick('home')} >Home</Link>
